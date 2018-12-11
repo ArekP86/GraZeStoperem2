@@ -1,4 +1,4 @@
-package pl.edu.kasprazak.grazestoperem;
+package pl.edu.kasprzak.grazestoperem;
 
 import android.app.Activity;
 import android.os.Handler;
@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
 
             private void updateLastTriesList(Integer clockValue) {
                 TextView newEntry = new TextView(MainActivity.this);
-                newEntry.setText(""+clockValue);
+                newEntry.setText("" + clockValue);
                 newEntry.setLayoutParams(new LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.WRAP_CONTENT,
                         LinearLayout.LayoutParams.WRAP_CONTENT));
@@ -110,9 +110,9 @@ public class MainActivity extends Activity {
 
                 bestTriesListView.removeAllViews();
 
-                for( Integer i=0; i<limit; ++i) {
+                for (Integer i = 0; i < limit; ++i) {
                     TextView pos = new TextView(MainActivity.this);
-                    pos.setText(""+(bestTriesIntArray.get(i)));
+                    pos.setText("" + (bestTriesIntArray.get(i)));
                     pos.setLayoutParams(new LinearLayout.LayoutParams(
                             LinearLayout.LayoutParams.WRAP_CONTENT,
                             LinearLayout.LayoutParams.WRAP_CONTENT));

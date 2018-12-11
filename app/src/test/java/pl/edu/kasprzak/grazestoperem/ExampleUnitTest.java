@@ -1,4 +1,4 @@
-package pl.edu.kasprazak.grazestoperem;
+package pl.edu.kasprzak.grazestoperem;
 
 import org.junit.Test;
 
