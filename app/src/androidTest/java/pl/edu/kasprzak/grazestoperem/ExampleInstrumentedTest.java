@@ -1,4 +1,4 @@
-package pl.edu.kasprazak.grazestoperem;
+package pl.edu.kasprzak.grazestoperem;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("pl.edu.kasprazak.grazestoperem", appContext.getPackageName());
+        assertEquals("pl.edu.kasprzak.grazestoperem", appContext.getPackageName());
     }
 }
