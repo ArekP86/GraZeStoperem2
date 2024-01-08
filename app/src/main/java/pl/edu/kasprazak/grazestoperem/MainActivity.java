@@ -21,7 +21,6 @@ import static java.lang.Integer.min;
 
 public class MainActivity extends Activity {
 
-    // lista pol klasy - zmiennych, ktore sa widoczne w kazdej metodzie klasy
     boolean runningClock = false;
     int counter = 50;
     private Runnable worker;
@@ -39,16 +38,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // inicjalizacja pamieci dla listy Integer'ow
         bestTriesIntArray = new ArrayList<Integer>();
-        // podstawienie elementow layoutu pod pola klasy, tak, aby mozna je bylo modyfikowac za pomoca kodu javy
         action = (Button) findViewById(R.id.action);
         clock = (TextView) findViewById(R.id.clock);
         lastTriesListView = (LinearLayout) findViewById(R.id.lastTriesList);
         bestTriesListView = (LinearLayout) findViewById(R.id.bestTriesList);
 
-        // Tutaj tworzymy anonimową klasę która implementuje interfejs Runnable
-        // Odpowiada to definicji class MyRunnable implements Runnable.
         worker = new Runnable() {
             @Override
             public void run() {
