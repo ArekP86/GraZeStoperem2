@@ -15,10 +15,6 @@ import java.util.Comparator;
 
 import static java.lang.Integer.min;
 
-//import android.support.v7.app.AppCompatActivity;
-//import android.support.v7.widget.LinearLayoutManager;
-//import android.support.v7.widget.RecyclerView;
-
 public class MainActivity extends Activity {
 
     // lista pol klasy - zmiennych, ktore sa widoczne w kazdej metodzie klasy
